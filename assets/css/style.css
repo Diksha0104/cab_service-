@@ -189,10 +189,9 @@ ul {
     text-transform: capitalize;
     color: rgb(51 51 51);
 }
-
 .why_container {
     padding: 50px 0px;
-    background-image: url(../images/why-bg.png);
+    background-image: url('../images/why-bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
