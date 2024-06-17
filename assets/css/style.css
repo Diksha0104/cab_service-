@@ -3,7 +3,10 @@
 body {
     font-family: 'Inter', sans-serif;
 }
-
+.logo-img {
+    width: 5px; 
+    height: 5px; 
+}
 .flt {
     float: left;
     width: 100%;
