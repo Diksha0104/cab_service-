@@ -109,7 +109,7 @@
                     Why Us
                 </div>
                 <div class="why_cont">
-                    <div class="row">
+                    <!--<div class="row">
                         <div class="col-sm-3">
                             <div class="why_box flt">
                                 <div class="why_icon flt">
@@ -145,6 +145,52 @@
                                 <div class="why_txt flt">Lowest Rate In
                                     The Market.</div>
                             </div>
+                        </div>
+                    </div>-->
+                    <div class="package_slider_container">
+                        <div class="package_slide">
+                            <div class="package_box">
+                                <div class="package_icon">
+                                    <img src="assets/images/why1.png" alt="image" />
+                                </div>
+                                <div class="package_text">Lowest Rate In The Market.</div>
+                                <button class="know_more_btn" onclick="showPopup('Lowest Rate In The Market')">Know More</button>
+                            </div>
+                        </div>
+                        <div class="package_slide">
+                            <div class="package_box">
+                                <div class="package_icon">
+                                    <img src="assets/images/support.png" alt="image" style="width: 50%; height: 50%;" />
+                                </div>
+                                <div class="package_text">24/7 Customer Support</div>
+                                <button class="know_more_btn" onclick="showPopup('24/7 Customer Support')">Know More</button>
+                            </div>
+                        </div>
+                        <div class="package_slide">
+                            <div class="package_box">
+                                <div class="package_icon">
+                                    <img src="assets/images/why3.png" alt="image" />
+                                </div>
+                                <div class="package_text">Hustle-free Doorstep Pickup & Drop.</div>
+                                <button class="know_more_btn" onclick="showPopup('Hustle-free Doorstep Pickup & Drop')">Know More</button>
+                            </div>
+                        </div>
+                        <div class="package_slide">
+                            <div class="package_box">
+                                <div class="package_icon">
+                                    <img src="assets/images/why2.png" alt="image" />
+                                </div>
+                                <div class="package_text">Trusted & Punctual Driver.</div>
+                                <button class="know_more_btn" onclick="showPopup('Trusted & Punctual Driver')">Know More</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Popup -->
+                    <div id="popup" class="popup">
+                        <div class="popup_content">
+                            <span class="close_btn" onclick="closePopup()">&times;</span>
+                            <p id="popup_message"></p>
                         </div>
                     </div>
                 </div>
