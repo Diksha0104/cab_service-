@@ -231,8 +231,8 @@ ul {
     justify-content: center;
     align-items: center;
     /* Add any other styling you need for the box */
-}
-.gallery_container {
+} 
+/* .gallery_container {c
     padding: 50px 0px;
     background-color: rgb(240, 243, 255);
 }
@@ -257,8 +257,32 @@ ul {
 .gallery_image img {
     width: 100%;
     border-radius: 10px;
+} */
+.package_box{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    transition: 0.3s all ease-in-out;
+    height: 50%;
+    width: 50%;
 }
-
+.package_slide{
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    margin: 0px 16px;
+}
+.package_cont.slick-prev.slick-arrow {
+    height: 26px;
+    width: 26px;
+    display: inline-block;
+    color: transparent;
+    border: 0px;
+    position: absolute;
+    left: 44%;
+    bottom: -60px;
+    z-index: 9;
+    background-color: transparent;
+}
 .testimonial_container {
     padding: 40px 0px 100px 0px;
     background: linear-gradient(180deg, rgb(240 243 255) 0%, rgb(153 172 251) 100%);
@@ -303,21 +327,6 @@ ul {
     font-size: 16px;
     line-height: 20px;
     color: rgb(30 35 41);
-}
-
-.testimonial_designation {
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
-    color: rgb(162 162 162);
-    margin: 5px 0px 10px 0px;
-}
-
-.testimonial_msg {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgb(42 47 53);
 }
 
 .testimonial_slide::before {
