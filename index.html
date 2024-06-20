@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="why.js"></script>
 </head>
 
 <body>
@@ -108,85 +112,114 @@
                 <div class="why_head flt">
                     Why Us
                 </div>
-                <div class="why_cont">
-                    <!--<div class="row">
-                        <div class="col-sm-3">
-                            <div class="why_box flt">
-                                <div class="why_icon flt">
-                                    <img src="assets/images/why1.png" alt="image" />
-                                </div>
-                                <div class="why_txt flt">Lowest Rate In
-                                    The Market.</div>
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <ul class="carousel">
+                      <li class="card">
+                        <div class="img"><img src="INDORE.jpg" alt="img" draggable="false"></div>
+                        <h2>Indore Tour</h2>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoModal1">Know More</button>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="indore-to-ujjain-taxi.jpg" alt="img" draggable="false"></div>
+                        <h2>INDORE TO UJJAIN</h2>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoModal2">Know More</button>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="Ujjain-Tour.jpg" alt="img" draggable="false"></div>
+                        <h2>UJJAIN TOUR</h2>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoModal3">Know More</button>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="Dewas.jpeg" alt="img" draggable="false"></div>
+                        <h2>DEWAS TOUR</h2>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoModal1">Know More</button>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="Maheswar.jpg" alt="img" draggable="false"></div>
+                        <h2>MAHESHWAR TOUR</h2>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoModal3">Know More</button>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="OMKARESHWAR.jpg" alt="img" draggable="false"></div>
+                        <h2>OMKARESHWAR TOUR</h2>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoModal4">Know More</button>
+                      </li>
+                    </ul>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                  </div>
+              
+                  <!-- Modal Templates -->
+                  <div class="modal fade" id="infoModal1" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="infoModalLabel1">Lowest Rate In The Market</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                More information about the lowest rates in the market.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="why_box flt">
-                                <div class="why_icon flt">
-                                    <img src="assets/images/why2.png" alt="image" />
-                                </div>
-                                <div class="why_txt flt">Trusted & Punctual
-                                    Driver.</div>
+                    </div>
+                </div>
+                <div class="modal fade" id="infoModal2" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel2" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="infoModalLabel2">Trusted & Punctual Driver</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                More information about our trusted and punctual drivers.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="why_box flt">
-                                <div class="why_icon flt">
-                                    <img src="assets/images/why3.png" alt="image" />
-                                </div>
-                                <div class="why_txt flt">Hustle – free Doorstep
-                                    Pickup & Drop.</div>
+                    </div>
+                </div>
+                <div class="modal fade" id="infoModal3" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel3" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="infoModalLabel3">Hustle-free Doorstep Pickup & Drop</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                More information about our hustle-free doorstep pickup and drop services.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="why_box flt">
-                                <div class="why_icon flt">
-                                    <img src="assets/images/why4.png" alt="image" />
-                                </div>
-                                <div class="why_txt flt">Lowest Rate In
-                                    The Market.</div>
+                    </div>
+                </div>
+                <div class="modal fade" id="infoModal4" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel4" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="infoModalLabel4">Lowest Rate In The Market</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                More information about the lowest rates in the market.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
-                    </div>-->
-                    <div class="container">
-                                <div class="testimonial_cont flt">
-                                    <div class="package_slide flt">
-                                        <div class="package_box flt">
-                                            <div class="why_icon flt">
-                                                <img src="assets/images/why1.png" alt="image" />
-                                            </div>
-                                            <div class="why_txt flt">Lowest Rate In
-                                                The Market.</div>
-                                        </div>
-                                    </div>
-                                    <div class="package_slide flt">
-                                        <div class="package_box flt">
-                                            <div class="why_icon flt">
-                                                <img src="assets/images/support.png" alt="image"  width=50% height=50%/>
-                                            </div>
-                                            <div class="why_txt flt">24/7
-                                                Customer Support</div>
-                                        </div>
-                                    </div>
-                                    <div class="package_slide flt">
-                                        <div class="package_box flt">
-                                            <div class="why_icon flt">
-                                                <img src="assets/images/why3.png" alt="image" />
-                                            </div>
-                                            <div class="why_txt flt">Hustle – free Doorstep
-                                                Pickup & Drop.</div>
-                                        </div>
-                                    </div>
-                                    <div class="package_slide flt">
-                                        <div class="package_box flt">
-                                            <div class="why_icon flt">
-                                            <img src="assets/images/why2.png" alt="image" />
-                                        </div>
-                                        <div class="why_txt flt">Trusted & Punctual
-                                            Driver.</div>
-                                        </div>
-                                    </div>
-                                </div>
-
                     </div>
                 </div>
             </div>
@@ -292,7 +325,7 @@
                             <div class="testimonial_slide flt">
                                 <div class="testimonial_box flt">
                                     <div class="why_icon flt">
-                                        <img src="assets/images/support.png" alt="image"  width=50% height=50%/>
+                                        <img src="assets/images/support.png" alt="image"  width=45% height=45%/>
                                     </div>
                                     <div class="why_txt flt">24/7
                                         Customer Support</div>
@@ -387,7 +420,7 @@
                                             Indoreofficial20@gmail.com</a>
                                     </li>
                                 </ul>
-                                <div class="contact_book flt">
+                                <div class="contact_book ">
                                     <a href="https://api.whatsapp.com/send?phone=916261089842" target="_blank">
                                         <img src="assets/images/whatsapp-book.png" alt="image" /> <span>Book a
                                             ride</span>
@@ -570,7 +603,7 @@
     <script>
         new WOW().init();
     </script>
-    <script>
+    <!--<script>
         var swiper = new Swiper(".slide-content", {
             slidesPerView: 3,
             spaceBetween: 25,
@@ -601,7 +634,34 @@
             },
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('package.slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                dots: false,
+                prevArrow: '<button type="button" class="slick-prev slick-arrow">&lt;</button>',
+                nextArrow: '<button type="button" class="slick-next slick-arrow">&gt;</button>'
+            });
+        });
+    </script>  --> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Adjust card width on window resize
+        window.addEventListener("resize", () => {
+            cardWidth = cards[0].offsetWidth;
+            carouselWidth = carousel.offsetWidth;
+            updateCarousel();
+        });
         
+    </script>
 </body>
 
 <script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh'},{'server':'sg2plcpnl0089'},{'dcenter':'sg2'},{'cp_id':'2109685'},{'cp_cache':''},{'cp_cl':'6'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
