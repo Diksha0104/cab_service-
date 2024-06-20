@@ -378,7 +378,7 @@ ul {
     }
   }
 .why_container {
-    padding: 50px 0px;
+    /* padding: 50px 0px; */
     background-image: url(why-bg.png);
     background-repeat: no-repeat;
     background-position: center;
