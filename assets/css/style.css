@@ -19,7 +19,7 @@ ul {
 
 .header_container {
     border-top: 8px solid rgb(65 65 65);
-    border-bottom: 1px solid rgb(253 199 10);
+    
     padding: 15px 0px;
 }
 
@@ -64,6 +64,66 @@ ul {
     padding: 10px 40px;
     outline: none;
     text-decoration: none;
+}
+/* General styles */
+.mobile_container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(253, 199, 10);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.mobile_container a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(253, 199, 10);
+    border-radius: 5px;
+    padding: 10px 20px;
+    outline: none;
+    text-decoration: none;
+     /* Add margin between links */
+}
+
+.callico img {
+    vertical-align: middle; /* Align images with text */
+    width: 20px; /* Set desired width for images */
+    height: 20px; /* Set desired height for images */
+}
+
+@media (max-width: 768px) {
+    .mobile_container {
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center; /* Ensure center alignment on mobile view */
+        text-align: center; /* Center text for mobile view */
+    }
+
+    .callico a {
+        display: inline-block; /* Keep links in a single line */
+        margin: 0 10px; /* Adjust margin for spacing between icons */
+        
+    }
+
+    .callico a img {
+        width: 30px; /* Adjust icon size for mobile view */
+        height: 30px; /* Adjust icon size for mobile view */
+    }
+
+    /* .callico a {
+        display: none; 
+    } */
+}
+.mobile_view_callico img {
+    vertical-align: middle; /* Align images with text */
+    width: 20px; /* Set desired width for images */
+    height: 20px; /* Set desired height for images *//
+
 }
 
 .banner {

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Taxi Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" href="assets/images/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/driver.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="try/why.js" defer></script>
+</head>
+<body>
+    <div class="main_container flt">
+        <div class="header_container flt" id="home">
+            <div class="container">
+                <div class="header flt">
+                    <div class="logo">
+                        <img src="assets/images/taxi.png" alt="logo"style="width: 40px; height: 40px;" />
+                    </div>
+                    <ul class="menuH" id="mobileMenu">
+                        <div class="menuH_close hide_desktop">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                <img src="assets/images/close-menu.png" alt="image" />
+                            </a>
+                        </div>
+                        <li><a class="active" id="menu_home" href="index.html">Home</a></li>
+                        <li><a id="menu_about" href="index.html">About Us</a></li>
+                        <li><a id="menu_why" href="index.html">Packages</a></li>
+                        <li><a id="menu_testimonial" href="index.html">Why Us</a></li>
+                        <li><a id="menu_contact" href="index.html">Contact Us</a></li>
+                        <li><a id="footer_home" href="driver_form.html">For Drivers</a></li>
+                    </ul>
+                    <span onclick="openNav()" class="toggle_btn hide_desktop">
+                        <img src="assets/images/open-menu.png" alt="image" />
+                    </span>
+                    <div class="call">
+                        <a href="tel:8448445504"><img src="assets/images/callus.svg" alt="8448445504">6261089842</a>
+                    </div>
+                    <div class="book_ride hide_mobile">
+                        <a href="https://api.whatsapp.com/send?phone=919244964500" target="_blank">Book a Ride</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mobileMenu").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mobileMenu").style.width = "0";
+        }
+    </script>
+</body>
+
+
+
+
+float: right;
+width: auto;
+padding: 0;
+margin: 10px 90px 0 0;
+clear: none;

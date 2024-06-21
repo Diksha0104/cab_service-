@@ -1,0 +1,31 @@
+.call{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgb(0 0 0);
+    text-transform: uppercase;
+    background-color: rgb(255 255 255);
+    border: 1px solid rgb(253 199 10);
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+}
+.call img {
+    width: 20px; /* Set the desired width */
+    height: 20px; /* Set the desired height */
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .contact_number {
+        display: block; /* Show on mobile view */
+    }
+    .header_container {
+        text-align: center;
+    }
+    .menuH {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
