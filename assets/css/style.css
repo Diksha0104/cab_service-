@@ -992,6 +992,10 @@ ul {
     .contact_image img {
         width: 100%;
     }
+    .form-container{
+        padding: 20px;
+        margin-left: 25px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
