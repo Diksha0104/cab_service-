@@ -686,7 +686,42 @@ ul {
     left: 0px;
     bottom: 0px;
 }
-
+/* -----------------------tables---------------------------------------- */
+.price_table{
+--rem: 16;
+--fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+--fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+--fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+font-family: "Droid Sans", sans-serif;
+user-select: none;
+min-height: 0.01%;
+overflow-x: auto;
+}
+.table {
+    width: 100% !important;
+    margin: 10px 0 20px;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+}
+.table th {
+    --rem: 16;
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    font-family: "Droid Sans", sans-serif;
+    user-select: none;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    background-color:rgb(245, 163, 2);
+}
+/* ----------------------------/tables------------------------------------- */
 .contact_container {
     padding: 50px 0px;
 }
