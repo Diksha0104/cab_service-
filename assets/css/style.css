@@ -121,16 +121,23 @@ ul {
         height: 30px; /* Adjust icon size for mobile view */
     }
 
+
+    .callico a span, 
+    .callico a::before,
+    .callico a::after {
+        display: none;
+    }
+}
     /* .callico a {
         display: none; 
     } */
-}
-.mobile_view_callico img {
-    vertical-align: middle; /* Align images with text */
-    width: 20px; /* Set desired width for images */
-    height: 20px; /* Set desired height for images *//
 
-}
+/*.mobile_view_callico img {
+    vertical-align: middle; /* Align images with text 
+    width: 20px;  Set desired width for images 
+    height: 20px;  Set desired height for images 
+
+}*/
 
 .banner {
     position: relative;
