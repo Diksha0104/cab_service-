@@ -88,7 +88,7 @@ ul {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(253, 199, 10);
+    /* border: 1px solid rgb(253, 199, 10); */
     border-radius: 5px;
     padding: 10px 20px;
     outline: none;
@@ -995,6 +995,7 @@ ul {
     .form-container{
         padding: 20px;
         margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
