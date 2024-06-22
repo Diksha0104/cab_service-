@@ -46,3 +46,10 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+@media (max-width: 767px) {
+    .form-container {
+        margin-left: 40px;
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+}
