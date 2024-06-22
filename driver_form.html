@@ -32,12 +32,12 @@
                                 <img src="assets/images/close-menu.png" alt="image" />
                             </a>
                         </div>
-                        <li><a class="active" id="menu_home" href="index.html">Home</a></li>
-                        <li><a id="menu_about" href="index.html">About Us</a></li>
-                        <li><a id="menu_why" href="index.html">Packages</a></li>
-                        <li><a id="menu_testimonial" href="index.html">Why Us</a></li>
-                        <li><a id="menu_contact" href="index.html">Contact Us</a></li>
-                        <li><a id="menu_contact" href="driver_form.html">For drivers</a></li>
+                        <li><a class="active" id="menu_home" href="#home"onclick="closeNav()">Home</a></li>
+                        <li><a id="menu_about" href="#about"onclick="closeNav()">About Us</a></li>
+                        <li><a id="menu_why" href="#package"onclick="closeNav()">Packages</a></li>
+                        <li><a id="menu_testimonial" href="#why"onclick="closeNav()">Why Us</a></li>
+                        <li><a id="menu_contact" href="#contact"onclick="closeNav()">Contact Us</a></li>
+                        <li><a id="menu_contact" href="driver_form.html"onclick="closeNav()">For drivers</a></li>
                         <!--<li class="book_ride hide_desktop"><a href="https://wa.me/6261089842"
                                 target="_blank">Book a Ride</a></li>-->
                     </ul>
@@ -50,59 +50,23 @@
                 </div>
             </div>
         </div>
-        <!--<dotlottie-player src="https://lottie.host/1c7a0014-e49f-422d-9f81-e37e368dfc0c/rOncAK97gL.lottie" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>-->
         <div class="mobile_container">
             <div class="callico">
                 <p>
                     <a href="tel:6261089842" class="call-link">
-                        <img src="assets\images\callus.svg" alt="Call">
+                        <img src="assets\images\Animation - 1719047401853.gif" alt="Call" style="width: 50px; height: 50px;" >
                         <span class="call-text">6261089842</span>
                     </a>
                     <a href="https://api.whatsapp.com/send?phone=+919244964500&amp;text=Hello I want to book a cab!" class="desktop_whatapp" target="_blank">
-                        <img src="assets\images\whatsapp.png" alt="">
-                        <span class="whatsapp-text">WhatsApp Chat</span>
+                        <img src="assets\images\whatsapp Animation.gif" alt=""style="width: 50px; height: 50px;" >
+                        <span class="whatsapp-text">WhatsApp</span>
+                    </a>
+                    <a href="https://www.instagram.com/swastiik_travels/">
+                        <img src="assets\images\Animation - instagram.gif" alt=""style="width: 50px; height: 50px;" >
+                        <span class="Instgram-text">Instgram</span>
                     </a>
                 </p>
             </div>
-        </div>
-        <div class="form-container">
-                                
-            <form action="https://api.web3forms.com/submit" method="POST">
-               <input type="hidden" name="access_key" value="2a8ac7a5-9c29-42ed-9679-9b9b9a3eca6d">
-              <div class= "form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name"name="Name" required>
-              </div>
-              <div class="form-group">
-                <label for="mobile">Mobile Number</label>
-                <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number"name="Number" required>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="pickupLocation">Pick-up Location</label>
-                  <input type="text" class="form-control" id="pickupLocation" placeholder="Enter pick-up location"name="pick-up location" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="dropLocation">Drop Location</label>
-                  <input type="text" class="form-control" id="dropLocation" placeholder="Enter drop location"name="drop location" required>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="date">Date</label>
-                  <input type="date" class="form-control" id="date"name="date" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="time">Time</label>
-                  <input type="time" class="form-control" id="time"name="time" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Enter additional details or requests"name="Message"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Book a ride</button>
-            </form>
         </div>
     </div>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
