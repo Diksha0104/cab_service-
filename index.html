@@ -33,12 +33,12 @@
                                 <img src="assets/images/close-menu.png" alt="image" />
                             </a>
                         </div>
-                        <li><a class="active" id="menu_home" href="#home">Home</a></li>
-                        <li><a id="menu_about" href="#about">About Us</a></li>
-                        <li><a id="menu_why" href="#package">Packages</a></li>
-                        <li><a id="menu_testimonial" href="#why">Why Us</a></li>
-                        <li><a id="menu_contact" href="#contact">Contact Us</a></li>
-                        <li><a id="menu_contact" href="driver_form.html">For drivers</a></li>
+                        <li class="dropdown"><a class="active" id="menu_home" href="#home">Home</a></li>
+                        <li class="dropdown"><a id="menu_about" href="#about">About Us</a></li>
+                        <li class="dropdown"><a id="menu_why" href="#package">Packages</a></li>
+                        <li class="dropdown"><a id="menu_testimonial" href="#why">Why Us</a></li>
+                        <li class="dropdown"><a id="menu_contact" href="#contact">Contact Us</a></li>
+                        <li class="dropdown"><a id="menu_contact" href="driver_form.html">For drivers</a></li>
                         <!--<li class="book_ride hide_desktop"><a href="https://wa.me/6261089842"
                                 target="_blank">Book a Ride</a></li>-->
                     </ul>
@@ -541,7 +541,14 @@
         function closeNav() {
             document.getElementById("mobileMenu").style.width = "0";
         }
+        var menuItems = document.querySelectorAll('.menuH li.dropdown a');
+        menuItems.forEach(function(item) {
+           item.addEventListener('click', closeNav);
+        });
+        
+        
     </script>
+    
     <script>
         $('.banner_container').slick({
             infinite: true,

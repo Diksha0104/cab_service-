@@ -52,4 +52,11 @@ button:hover {
         margin-top: 80px;
         margin-bottom: 10px;
     }
+    button {
+        font-size: 1.7rem; /* Increase button font size */
+        background-color: rgb(245, 163, 2);
+        color: black;
+        border-radius: 20px;
+        margin-left: 90px;
+    }
 }
