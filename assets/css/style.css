@@ -238,6 +238,21 @@ ul {
     height: 100%;
     background-color: rgb(0 0 0 / 15%);
 }
+/* Default styles for the image */
+.responsive-image {
+    height: 590px;
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px) { /* Adjust the max-width value as needed for your specific mobile breakpoint */
+    .responsive-image {
+        height: 150px; /* Change this value to your desired height for mobile */
+        width: 100%; /* Make the image take up the full width of the mobile screen */
+        object-fit: cover; /* Ensure the image covers the area */
+    }
+}
+
 .about_container {
     padding: 50px 0px 80px 0px;
     background: rgb(245 245 245);
