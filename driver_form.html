@@ -70,7 +70,7 @@
         </div>
         <div class="form">
             <div class="form-container">
-                <form action="https://api.web3forms.com/submit" method="POST">
+                <form action="" method="POST" id="car-details-form" name="driver data">
                     <input type="hidden" name="access_key" value="4c6a62fc-b314-4b30-b691-4b06a46ada54">
                     <h2>Car Details Form</h2>
                     <div class= "form-group">
@@ -168,5 +168,30 @@
             document.getElementById("mobileMenu").style.width = "0";
         }
     </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx9kYdbERollwqQ3Q61_38DoBX_MSeIGfh73dNDp6ldYOPOkneS8KH1RNL1f1qJhGMv/exec';
+            const form = document.getElementById('car-details-form');
+    
+            form.addEventListener('submit', async function(event) {
+                event.preventDefault();
+    
+                try {
+                    const response = await fetch(scriptURL, { 
+                        method: 'POST', 
+                        body: new FormData(form)
+                    });
+                    
+                    const result = await response.json();
+                    if (result.result === 'success') {
+                        alert("Thank you! Your form is submitted successfully.");
+                    } else {
+                        alert(`An error occurred: ${result.error}`);
+                    }
+                } catch (error) {
+                    alert(`An error occurred while submitting the form: ${error.message}`);
+                }
+            });
+        </script>
 </body>
 

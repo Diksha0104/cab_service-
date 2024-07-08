@@ -1245,3 +1245,12 @@ overflow-x: auto;
         display: none !important;
     }
 }
+
+
+.modal-header h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #8B53FF
+
+  
+}
