@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="try/why.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
 </head>
 
 <body>
@@ -39,8 +40,7 @@
                         <li class="dropdown"><a id="menu_testimonial" href="#why">Why Us</a></li>
                         <li class="dropdown"><a id="menu_contact" href="#contact">Contact Us</a></li>
                         <li class="dropdown"><a id="menu_contact" href="driver_form.html">For drivers</a></li>
-                        <!--<li class="book_ride hide_desktop"><a href="https://wa.me/6261089842"
-                                target="_blank">Book a Ride</a></li>-->
+                        
                     </ul>
                     <span onclick="openNav()" class="toggle_btn hide_desktop">
                         <img src="assets/images/open-menu.png" alt="image" />
@@ -48,6 +48,30 @@
                     <div class="book_ride hide_mobile">
                         <a href="https://api.whatsapp.com/send?phone=+919244964500&amp;text=Hello I want to book a cab!" class="desktop_whatapp" target="_blank">Book a Ride</a>
                     </div>
+                    <!--<header class ="header">
+                        <ul class="menuH" id="mobileMenu">
+                            <div class="menuH_close hide_desktop">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                    <img src="assets/images/close-menu.png" alt="image" />
+                                </a>
+                            </div>
+                            <i class="fa-solid fa-bars" id="menu-icon"></i>
+                            <nav class="navbar">
+                                <li class="dropdown"><a class="active" id="menu_home" href="#home">Home</a></li>
+                                <li class="dropdown"><a id="menu_why" href="#package">Packages</a></li>
+                                <li class="dropdown"><a id="menu_testimonial" href="#why">Why Us</a></li>
+                                <li class="dropdown"><a id="menu_about" href="#about">About Us</a></li>
+                                <li class="dropdown"><a id="menu_contact" href="#contact">Contact Us</a></li>
+                                <li class="dropdown"><a id="menu_contact" href="driver_form.html">For drivers</a></li>
+                            </nav>
+                        </ul>
+                        <span onclick="openNav()" class="toggle_btn hide_desktop">
+                            <img src="assets/images/open-menu.png" alt="image" />
+                        </span>
+                        <div class="book_ride hide_mobile">
+                            <a href="https://api.whatsapp.com/send?phone=+919244964500&amp;text=Hello I want to book a cab!" class="desktop_whatapp" target="_blank">Book a Ride</a>
+                        </div>
+                    </header>-->
                 </div>
             </div>
         </div>
@@ -541,10 +565,30 @@
         function closeNav() {
             document.getElementById("mobileMenu").style.width = "0";
         }
-        var menuItems = document.querySelectorAll('.menuH li.dropdown a');
-        menuItems.forEach(function(item) {
-           item.addEventListener('click', closeNav);
-        });
+        //var menuItems = document.querySelectorAll('.menuH li.dropdown a');
+        //menuItems.forEach(function(item) {
+         //  item.addEventListener('click', closeNav);
+        //});
+        function updateDropdownBehavior() {
+            var menuItems = document.querySelectorAll('.menuH li.dropdown a');
+            var isMobileView = window.matchMedia("(max-width: 768px)").matches;
+
+            menuItems.forEach(function(item) {
+                if (isMobileView) {
+                    item.style.width = "300px";
+                    item.addEventListener('click', closeNav);
+                } else {
+                    item.style.width = ""; // Reset to default or desired value
+                    item.removeEventListener('click', closeNav);
+                }
+            });
+        }
+
+        // Initial check and setup
+        updateDropdownBehavior();
+
+        // Update dropdown behavior on window resize
+        window.addEventListener('resize', updateDropdownBehavior);
         
         
     </script>
