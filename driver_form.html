@@ -167,6 +167,28 @@
         function closeNav() {
             document.getElementById("mobileMenu").style.width = "0";
         }
+        function updateDropdownBehavior() {
+            var menuItems = document.querySelectorAll('.menuH li.dropdown a');
+            var isMobileView = window.matchMedia("(max-width: 768px)").matches;
+
+            menuItems.forEach(function(item) {
+                if (isMobileView) {
+                    item.style.width = "300px";
+                    item.addEventListener('click', closeNav);
+                } else {
+                    item.style.width = ""; // Reset to default or desired value
+                    item.removeEventListener('click', closeNav);
+                }
+            });
+        }
+
+        // Initial check and setup
+        updateDropdownBehavior();
+
+        // Update dropdown behavior on window resize
+        window.addEventListener('resize', updateDropdownBehavior);
+        
+        
     </script>
 
         <script>
