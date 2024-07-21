@@ -1128,7 +1128,22 @@ overflow-x: auto;
     
     .car_card {
         margin: 10px 0;
-        
+        width: 350px;
+
+    }
+    .car_card li {
+        font-size: 14px; /* Adjust font size as needed */
+    }
+    
+    .car_card button {
+        padding: 8px 16px; /* Adjust padding as needed */
+    }
+
+    .car_card ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-items: center;
     }
 }
 
